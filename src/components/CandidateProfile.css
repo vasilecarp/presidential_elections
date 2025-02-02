@@ -1,0 +1,17 @@
+
+.candidate-profile {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.candidate-profile h2 {
+    margin-bottom: 10px;
+}
+
+.candidate-profile p {
+    line-height: 1.5;
+}
