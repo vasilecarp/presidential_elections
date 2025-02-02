@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Login from "./components/Login";
+import Register from "./components/Register";
+import Profile from "./components/Profile";
+import CandidatesList from "./components/CandidatesList";
+import CandidateProfile from "./components/CandidateProfile";
+import Results from "./components/Results";
+import { useState } from "react";
 
 function App() {
+  const [candidates, setCandidates] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route
+          path="/candidates"
+          element={<CandidatesList candidates={candidates} />}
+        />
+        <Route path="/candidate/:id" element={<CandidateProfile />} />
+        <Route path="/results" element={<Results candidates={candidates} />} />
+      </Routes>
+    </Router>
   );
 }
 
