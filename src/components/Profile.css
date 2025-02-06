@@ -1,0 +1,72 @@
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.profile-container textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-family: inherit;
+    line-height: 1.5;
+}
+
+.profile-container textarea:focus {
+    outline: none;
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.2);
+}
+
+.profile-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.profile-container button:hover {
+    background-color: #218838;
+}
+
+.profile-container button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.candidate-status {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    color: #155724;
+    text-align: center;
+}
+
+.error-message {
+    color: #dc3545;
+    margin: 10px 0;
+    text-align: center;
+}

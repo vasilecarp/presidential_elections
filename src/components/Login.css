@@ -1,4 +1,4 @@
-.register-form {
+.login-form {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
@@ -8,12 +8,12 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.register-form h2 {
+.login-form h2 {
     margin-bottom: 20px;
     text-align: center;
 }
 
-.register-form input {
+.login-form input {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -22,7 +22,7 @@
     box-sizing: border-box;
 }
 
-.register-form button {
+.login-form button {
     width: 100%;
     padding: 10px;
     background-color: #28a745;
@@ -33,12 +33,28 @@
     margin-top: 20px;
 }
 
-.register-form button:hover {
+.login-form button:hover {
     background-color: #218838;
 }
 
-.register-form .error-message {
+.login-form .error-message {
     color: red;
     margin: 10px 0;
     text-align: center;
+}
+
+.login-form .forgot-password {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.login-form .forgot-password a {
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.login-form .forgot-password a:hover {
+    color: #5a6268;
+    text-decoration: underline;
 }
